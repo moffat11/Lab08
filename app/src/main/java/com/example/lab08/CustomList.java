@@ -23,4 +23,13 @@ public class CustomList {
         return cities.contains(city);
     }
 
+    /*public void deleteCity(City city) {
+        if (!cities.remove(city)) {
+            throw new IllegalArgumentException("City not found");
+        }
+    }*/
+
+    public int countCities() {
+        return cities.size();
+    }
 }
