@@ -12,7 +12,9 @@ public class CustomList {
     }
 
     public void addCity(City city) {
-
+        if (hasCity(city)) {
+            throw new IllegalArgumentException("Duplicate city");
+        }
         cities.add(city);
     }
 
